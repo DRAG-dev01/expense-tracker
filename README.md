@@ -1,7 +1,8 @@
-# Expense Tracker # Live url: https://expense-tracker-tkns.onrender.com
+# Expense Tracker
+
 
 A full-stack expense tracking web app built with Flask, featuring automatic expense categorization and visual spending breakdowns.
-
+ Live url: https://expense-tracker-tkns.onrender.com
 ## Screenshot
 
 ![Expense Tracker Screenshot](screenshot.png)
