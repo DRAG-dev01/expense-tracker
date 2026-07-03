@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my expense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+    <h1>expense app :</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Action</th>
+    </tr>
+    {% for row in expenses %}
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>
+    <form action="{{ url_for('delete', expense_id=row[0]) }}" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+</td>
+    </tr>
+    {% endfor %}
+</table>
+<form action="/add" method="POST">
+    <label>Date:</label>
+    <input type="text" name="date"><br>
+
+    <label>Amount:</label>
+    <input type="number" name="amount"><br>
+
+    <label>Description:</label>
+    <input type="text" name="description"><br>
+
+    <label>Category:</label>
+    <input type="text" name="category"><br>
+
+    <input type="submit" value="Add Expense">
+</form>
+<img src="{{ url_for('static', filename='chart.png') }}" alt="Spending by category">
+<footer>
+    <p>Made by DRAG </p>
+</footer>
+    </div>
+</body>
+</html>

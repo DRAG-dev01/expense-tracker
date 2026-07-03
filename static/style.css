@@ -1,0 +1,76 @@
+body {
+    background-color: lightblue;      /* try a color name like "lightblue" or "#f0f0f0" */
+    font-family: Arial, Helvetica, sans-serif;            /* try "Arial, sans-serif" */
+}
+
+table {
+    border-collapse: collapse;   /* this one's fine as-is, makes borders look clean */
+    width: 100%;                  /* try "100%" or "80%" */
+}
+
+th, td {
+    border: 1px solid gray;                 /* try "1px solid black" or "1px solid gray" */
+    padding: 8px;                /* try "8px" or "10px" */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+th {
+    background-color: #1c017e;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #1c017e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    font-size: 14px;
+}

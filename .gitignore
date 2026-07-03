@@ -1,0 +1,4 @@
+expenses.db
+static/chart.png
+__pycache__/
+*.pyc
